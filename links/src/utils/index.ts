@@ -11,6 +11,7 @@ export interface CustomButtonProps {
   textStyles?: string;
   link: string | undefined;
   title: string;
+  share: boolean
   handleClick?: MouseEventHandler<HTMLButtonElement>;
 }
 const navLinks: Link[] = [
@@ -33,6 +34,18 @@ const buttonLinks: Link[] = [
   {
     name: "test2",
     path: "/",
-  }
+  },
+    {
+    name: "test2",
+    path: "/",
+  },
+    {
+    name: "test2",
+    path: "/",
+  },
+    {
+    name: "test2",
+    path: "/",
+  },
 ];
 export { navLinks, buttonLinks }

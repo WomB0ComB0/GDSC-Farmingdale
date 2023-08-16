@@ -4,7 +4,7 @@
 
 @layer components {
   .custom-btn {
-    @apply relative flex flex-row items-center justify-center px-6 py-3 rounded-lg outline-none focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white;
+    @apply relative flex flex-row items-center justify-center px-6 py-3 rounded-lg outline-none focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white bg-yellow-500;
   }
   .button-text {
     @apply transition-shadow duration-[250ms] ease-in-out hyphens-auto bg-none overflow-ellipsis break-words ml-auto mr-auto;

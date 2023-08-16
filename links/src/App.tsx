@@ -32,17 +32,17 @@ export default function App() {
   const NavigationContainer = () => {
     const Buttons = () => {
       return (
-        <div className='flex flex-col w-full gap-4'>
+        <div className='flex flex-col w-full gap-4 overflow-y-auto'>
           {buttonLinks.map((item) => {
             return (
-              <Button key={item.name} title={item.name} link={item.path} />
+              <Button key={item.name} title={item.name} link={item.path} containerStyles='h-[40px]'/>
             )})}
         </div>
       )
     }
     return(
-      <div className='flex flex-col items-center justify-center'>
-        <h3 className=''>Events</h3>
+      <div className='flex flex-col items-center justify-center w-[90%]'>
+        <h3 className='mb-3'>Events</h3>
         <Buttons/>
       </div>
     )
@@ -63,7 +63,7 @@ export default function App() {
     return (
       <header className='flex flex-col items-center justify-center gap-2'>
         <GDSCIcon width={100} height={100}/>
-        <h1 className=''>{name}</h1>
+        <h1 className='text-sm font-bold'>{name}</h1>
         <Links/>
       </header>
     )
@@ -73,7 +73,7 @@ export default function App() {
       <section 
       id={`card`}
       onMouseMove={handleMouseMove}
-      className='rounded-md shadow-md w-[300px] mt-[50px] mb-[50px] h-[80vh] justify-evenly items-center flex flex-col light:glass-card'>
+      className='rounded-md shadow-md w-[300px] mt-[50px] mb-[50px] h-[80vh] justify-around items-center flex flex-col light:glass-card'>
         <Header/>
         <NavigationContainer/>
       </section>
